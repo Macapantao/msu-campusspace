@@ -1,13 +1,61 @@
-body {
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Reset default browser styles */
+body, h1, h2, h3, p, ul, li, a {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f9f9f9; /* Light gray background */
+  color: #333; /* Dark text */
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  color: #2c3e50; /* Dark blue for headings */
+}
+
+a {
+  color: #3498db; /* Blue for links */
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Maroon and Gold Colors */
+.maroon-bg {
+  background-color: theme('colors.maroon');
+}
+
+.gold-text {
+  color: theme('colors.gold');
+}
+
+/* Add some spacing between elements */
+.mt-1 { margin-top: 10px; }
+.mt-2 { margin-top: 20px; }
+.mt-3 { margin-top: 30px; }
+
+/* Example: Apply maroon and gold color styles */
+.header {
+  background-color: #800000; /* Maroon */
+  color: #FFD700; /* Gold */
+}
+
+.footer {
+  background-color: #FFD700; /* Gold */
+  color: #800000; /* Maroon */
 }
